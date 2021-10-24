@@ -59,9 +59,9 @@ function draw() {
         if(states[i] == 0) {
             fill('#FF0000');
         } else if(states[i] == 1) {
-            fill('#FFFF99');
-        } else {
             fill('#E0E0E0');
+        } else {
+            fill('#99FF99');
         }
         rect(i * w, height - values[i], w, values[i]);
     }
@@ -69,7 +69,7 @@ function draw() {
 }
 
 async function swap(arr, a, b) {
-    await sleep(50);
+    await sleep(20);
     let temp = arr[a];
     arr[a] = arr[b];
     arr[b] = temp;
